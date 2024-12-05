@@ -1,0 +1,95 @@
+basic comparision between c++ and java
+
+structure of c++ program
+#include <iostream> (input output stream) library which is imported to be executed in our code
+using namespace std;
+
+int main() {
+    cout << "Balreet" << endl;
+    return 0;
+}
+
+structure in java
+import java.util.*; (to import the library) * is for importing all library
+class Main { 
+    public static void main(string[] args) { //string args[] are default arguments that are passed we are writing in strings inside main function
+        System.out.print("Hello"); 
+    }
+}
+// static keyword for main function so that it stays alive till the program ends
+
+// static keyword like life (it is alive till the program ends)
+
+void function() {
+    int x =20;
+    static y = 30;
+    x = x+10;
+    y = y+10;
+    return (x,y);
+}
+
+main() {
+    cout << function(); // 30,40
+    cout << function(); // 30,50
+    cout << function(); // 30,60
+}
+
+// c++ input 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter the number : ";
+    cin >> num;
+    cout << "Entered number :" << num;
+    return 0;
+}
+
+for java 
+
+import java.util.scanner; // scanner class to take input
+public class Main{
+    public static void main(string[] args) {
+        scanner se = new scanner(System.in);
+        int num = se.nextint();
+    }
+}
+
+// variables and datatypes (identicle in java and c++)
+
+// conditional statements are identicle too
+// loops are identicle too;
+
+// OOPS difference
+
+class student{
+    public:
+    string name;
+    int age;
+
+    student(string name, int age) {
+        this -> name = name;
+        this -> age = age;
+    }
+
+    void display() {
+        cout << name << age << endl;
+    }
+}
+
+in java
+
+public class Studentn{
+    string name;
+    int age;
+
+    public Student(string name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public void display() {
+        System.out.println(name, age); // semicolon is optional 
+    }
+}
